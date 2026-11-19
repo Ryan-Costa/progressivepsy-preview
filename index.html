@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Progressive Psy BR · Cultura Trance</title>
+<meta name="description" content="Progressive Psy BR: portal dedicado a promover a cultura psicodélica progressiva no Brasil. Eventos, artistas e novidades do trance progressivo.">
+<!--
+  Montado com os blocos, o tema e o CSS do Waveform (waveform/site.css é cópia de src/components/site/site.css).
+  Cada <section> corresponde a um bloco do editor; o passo a passo está em MONTAGEM.md.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="waveform/site.css">
+<style>
+  /* Fontes como o next/font expõe no Waveform: --font-<chave>. */
+  :root{--font-orbitron:"Orbitron";--font-chakra-petch:"Chakra Petch";--font-space-grotesk:"Space Grotesk"}
+  body{margin:0}
+</style>
+</head>
+<body>
+<!-- Tema do Waveform (Aparência): as mesmas variáveis que themeToCssVars() gera. -->
+<div class="wf-site" style="
+  --wf-bg:#070807; --wf-surface:#121411; --wf-text:#f3eee2; --wf-muted:#b8b09c;
+  --wf-primary:#f2c661; --wf-accent:#d9a033;
+  --wf-primary-rgb:242, 198, 97; --wf-accent-rgb:217, 160, 51; --wf-bg-rgb:7, 8, 7;
+  --wf-on-accent:#0b0314; --wf-on-primary:#0b0314; --wf-line:rgba(242, 198, 97, .35); --wf-radius:2px;
+  --wf-font-title:var(--font-orbitron); --wf-size-title:1.3;
+  --wf-font-heading:var(--font-orbitron); --wf-size-heading:.85;
+  --wf-font-eyebrow:var(--font-chakra-petch); --wf-size-eyebrow:1.1;
+  --wf-font-nav:var(--font-chakra-petch); --wf-size-nav:1.1;
+  --wf-font-body:var(--font-space-grotesk); --wf-size-body:1.05;
+  --wf-font-button:var(--font-chakra-petch); --wf-size-button:1.05;">
+
+  <div style="position:relative">
+    <header class="wf-header wf-header--overlay">
+      <a href="#" class="wf-logo" aria-label="Progressive Psy BR"><span>PROGRESSIVE ∞</span></a>
+      <button type="button" class="wf-nav-toggle" aria-expanded="false" aria-controls="wf-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <nav id="wf-menu" class="wf-nav" aria-label="Navegação principal">
+        <a href="#evento">Evento</a>
+        <a href="#sobre">O portal</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#canais">Canais</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Bloco: Abertura (hero) · fundo: foto · alinhamento: centro · sombra: forte -->
+    <section class="wf-hero" aria-label="Progressive Psy BR">
+      <div class="wf-hero__media" style="--wf-fx:.5;--wf-fy:.5;--wf-aspect:1920 / 1282">
+        <picture><img src="assets/beach-please-2022-crowd-stage-lights-night.jpg" alt="" loading="eager" decoding="async"></picture>
+      </div>
+      <div class="wf-hero__shade wf-hero__shade--strong"></div>
+      <div class="wf-hero__content">
+        <span class="wf-eyebrow">Cultura trance · Brasil</span>
+        <h1 class="wf-h1"><span><span>Everything is</span></span><span class="wf-shimmer"><em>progressive</em></span></h1>
+        <p class="wf-lead" style="max-width:640px">Somos um portal dedicado a promover a cultura psicodélica progressiva: eventos, artistas e tudo o que move a pista.</p>
+        <div class="wf-hero__ctas">
+          <a href="#evento" class="wf-btn wf-btn--primary">Próximo evento</a>
+          <a href="https://linktr.ee/ProgressivePsyBR" class="wf-btn wf-btn--outline" target="_blank" rel="noopener noreferrer">Todos os links</a>
+        </div>
+        <a href="#evento" class="wf-scroll">Role
+          <svg width="18" height="26" viewBox="0 0 18 26" fill="none" stroke="var(--wf-accent)" stroke-width="1.6" aria-hidden="true"><rect x="1" y="1" width="16" height="24" rx="8"/><circle class="wf-beat" cx="9" cy="8" r="2" fill="var(--wf-accent)" stroke="none"/></svg>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <main id="conteudo">
+    <!-- Bloco: Vitrine (showcase) · fotos à direita · troca a cada 5 s -->
+    <section class="wf-section" id="evento" style="padding-top:60px;padding-bottom:20px">
+      <div class="wf-card wf-showcase">
+        <div class="wf-showcase__text">
+          <span class="wf-eyebrow">25 de dezembro · Fortaleza, CE</span>
+          <h2 class="wf-h2"><span>Psyclub vs Progressive </span><em>Christmas Edition</em></h2>
+          <p class="wf-showcase__lead">O Natal mais psicodélico de Fortaleza: Psyclub e Progressive juntos numa edição especial, com Gebra, Focus Mind e mais atrações. Patrocínio oficial: Pitú.</p>
+          <a href="https://linktr.ee/ProgressivePsyBR" class="wf-showcase__cta" target="_blank" rel="noopener noreferrer">Ingressos e informações</a>
+        </div>
+        <div class="wf-showcase__media" role="region" aria-roledescription="carrossel" aria-label="Psyclub vs Progressive">
+          <div class="wf-showcase__frame">
+            <div class="wf-showcase__slide is-active"><img src="assets/dance-temple-boom-2012.jpg" width="1000" height="657" alt="Pista de psytrance sob decoração colorida" loading="eager" decoding="async"></div>
+            <div class="wf-showcase__slide" aria-hidden="true"><img src="assets/boom-festival-2018-ruckenfigur-44749947642.jpg" width="1920" height="1280" alt="Público de costas diante de um palco iluminado" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="wf-showcase__dots">
+            <button type="button" class="wf-showcase__dot" aria-label="Mostrar a foto 1" aria-current="true"></button>
+            <button type="button" class="wf-showcase__dot" aria-label="Mostrar a foto 2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Sobre (about) · foto à direita -->
+    <section class="wf-section" id="sobre">
+      <div class="wf-about">
+        <div>
+          <div class="wf-head">
+            <div class="wf-head__text">
+              <span class="wf-eyebrow">O portal</span>
+              <h2 class="wf-h2"><span>Cultura </span><em>psicodélica progressiva</em></h2>
+            </div>
+          </div>
+          <div class="wf-prose">
+            <p><span>A Progressive Psy BR nasceu para dar espaço ao trance progressivo no Brasil. A gente divulga os eventos, apresenta os artistas e conta o que está acontecendo na cena, de Fortaleza para o país.</span></p>
+            <p><span>Mais que uma festa, é uma comunidade de quem vive a pista: produtores, DJs, decoradores e o público que faz tudo acontecer. Everything is progressive.</span></p>
+          </div>
+          <p style="margin-top:28px"><a href="https://www.instagram.com/progressivepsybr/" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Seguir no Instagram</a></p>
+        </div>
+        <div>
+          <img src="assets/boom-festival-2018.jpg" width="1920" height="1280" alt="Festival de trance ao ar livre à beira de um lago" loading="lazy" decoding="async" class="wf-about__image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Agenda (agenda) · lê os eventos cadastrados em "Eventos" -->
+    <section class="wf-section" id="agenda">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Agenda</span>
+          <h2 class="wf-h2"><span>Próximas </span><em>pistas</em></h2>
+        </div>
+      </div>
+      <div class="wf-agenda">
+        <article class="wf-event">
+          <div class="wf-event__date"><time datetime="2026-12-25T16:00:00-03:00">25 DEZ</time></div>
+          <div class="wf-event__info">
+            <h3 class="wf-event__title"><span>Psyclub vs Progressive · </span><em>Christmas Edition</em></h3>
+            <p class="wf-muted" style="font-size:16px">Fortaleza, CE · 16:00</p>
+          </div>
+          <div class="wf-event__actions"><a href="https://linktr.ee/ProgressivePsyBR" class="wf-btn wf-btn--small wf-btn--primary" target="_blank" rel="noopener noreferrer">Ingressos</a></div>
+        </article>
+        <article class="wf-event">
+          <div class="wf-event__date"><time datetime="2027-01-23T16:00:00-03:00">23 JAN</time></div>
+          <div class="wf-event__info">
+            <h3 class="wf-event__title"><span>Progressive </span><em>Sunset</em></h3>
+            <p class="wf-muted" style="font-size:16px">Fortaleza, CE · 16:00</p>
+          </div>
+          <div class="wf-event__actions"><a href="https://www.instagram.com/progressivepsybr/" class="wf-btn wf-btn--small wf-btn--outline" target="_blank" rel="noopener noreferrer">Mais info</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bloco: Mídias (media) · sem vídeo em destaque · cartões lado a lado -->
+    <section class="wf-section" id="canais">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Canais</span>
+          <h2 class="wf-h2"><span>Acompanhe a </span><em>cena</em></h2>
+        </div>
+      </div>
+      <div class="wf-media wf-media--side">
+        <div class="wf-media__side">
+          <div class="wf-media__row">
+            <a href="https://www.instagram.com/progressivepsybr/" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+              <span><strong>Instagram</strong><span class="wf-muted" style="font-size:15px">Line-ups, artistas e bastidores</span></span>
+            </a>
+            <a href="https://linktr.ee/ProgressivePsyBR" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <span><strong>Ingressos e links</strong><span class="wf-muted" style="font-size:15px">Tudo num lugar só</span></span>
+            </a>
+            <a href="https://www.threads.net/@progressivepsybr" class="wf-card wf-icon-card" target="_blank" rel="noopener noreferrer">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <span><strong>Threads</strong><span class="wf-muted" style="font-size:15px">@progressivepsybr</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Galeria (gallery) · layout: grade -->
+    <section class="wf-section" id="fotos">
+      <div class="wf-head">
+        <div class="wf-head__text">
+          <span class="wf-eyebrow">Na pista</span>
+          <h2 class="wf-h2"><span>A cena </span><em>progressiva</em></h2>
+        </div>
+      </div>
+      <div class="wf-gallery-grid">
+        <figure><img src="assets/boom-festival-2018-ruckenfigur-44749947642.jpg" width="1920" height="1280" alt="Público diante de um palco iluminado" loading="lazy" decoding="async"><figcaption>Diante do palco</figcaption></figure>
+        <figure><img src="assets/dfc-5183-hands-on-mixing-a-dj.jpg" width="1920" height="1280" alt="Mãos no mixer sob luz vermelha" loading="lazy" decoding="async"><figcaption>Na cabine</figcaption></figure>
+        <figure><img src="assets/dsc-6225-crowd-capturing-the-night-sky.jpg" width="1920" height="1277" alt="Público filmando as luzes da festa" loading="lazy" decoding="async"><figcaption>A noite inteira</figcaption></figure>
+        <figure><img src="assets/dance-temple-boom-2012.jpg" width="1000" height="657" alt="Pista de psytrance decorada" loading="lazy" decoding="async"><figcaption>Decoração psicodélica</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Bloco: Faixa de chamada (cta_banner) -->
+    <section class="wf-section" style="padding-top:60px;padding-bottom:20px">
+      <div class="wf-card wf-banner">
+        <div style="flex:1 1 320px;min-width:0">
+          <p class="wf-banner__title"><span>Produz, toca ou decora? </span><em>Chega junto</em></p>
+          <p class="wf-muted" style="font-size:17px;margin-top:4px">Divulgue seu evento ou seu trabalho no portal. Fale com a gente pelo Instagram.</p>
+        </div>
+        <a href="https://www.instagram.com/progressivepsybr/" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Mandar mensagem</a>
+      </div>
+    </section>
+
+    <!-- Bloco: Divisor (divider) · onda · 104 px -->
+    <div class="wf-wave" aria-hidden="true" style="height:104px"><div class="wf-wave__line"></div><div class="wf-wave__bars" id="wave"></div></div>
+
+    <!-- Bloco: Contato (contact) -->
+    <section class="wf-section" id="contato" style="padding-bottom:120px">
+      <div class="wf-contact">
+        <div>
+          <span class="wf-eyebrow">Contato</span>
+          <h2 class="wf-h2"><span>Fale com a </span><em>Progressive</em></h2>
+          <p class="wf-lead" style="max-width:460px">Parcerias, patrocínio, divulgação de eventos e artistas: o melhor caminho é o Direct.</p>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/progressivepsybr/" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Instagram</small><strong>@progressivepsybr</strong></a>
+          <a href="https://linktr.ee/ProgressivePsyBR" class="wf-card wf-contact__item" target="_blank" rel="noopener noreferrer"><small>Links</small><strong>linktr.ee/ProgressivePsyBR</strong></a>
+          <a href="https://www.instagram.com/progressivepsybr/" class="wf-btn wf-btn--primary" target="_blank" rel="noopener noreferrer">Mandar mensagem</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco: Redes sociais (social_links) · centralizado -->
+    <section class="wf-section" style="padding-top:60px;padding-bottom:20px;text-align:center">
+      <p class="wf-eyebrow" style="margin-bottom:20px">Everything is progressive</p>
+      <div class="wf-socials" style="justify-content:center">
+        <a href="https://www.instagram.com/progressivepsybr/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://linktr.ee/ProgressivePsyBR" aria-label="Link" target="_blank" rel="noopener noreferrer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bloco: Rodapé (footer) -->
+  <footer class="wf-footer">
+    <strong style="font-family:var(--wf-font-heading);color:var(--wf-text)">PROGRESSIVE ∞</strong>
+    <span>Portal da cultura psicodélica progressiva · Brasil</span>
+    <nav class="wf-footer__links" aria-label="Links do rodapé">
+      <a href="https://www.instagram.com/progressivepsybr/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://linktr.ee/ProgressivePsyBR" target="_blank" rel="noopener noreferrer">Links</a>
+    </nav>
+    <a href="#" style="color:var(--wf-accent)">Voltar ao topo ↑</a>
+  </footer>
+
+  <aside class="wf-credit">
+    <span>Feito com Waveform.</span> <a href="https://wa.me/5585991623247?text=Oi!%20Conheci%20a%20Waveform%20pela%20p%C3%A1gina%20de%20Progressive%20Psy%20BR%20e%20quero%20saber%20mais." target="_blank" rel="noopener noreferrer">Quer a sua? Fale com a Cuebase</a>
+  </aside>
+  <p class="wf-credit" style="padding-top:0">Fotos de referência: <a href="https://commons.wikimedia.org/wiki/File:Beach-Please-2022-crowd-stage-lights-night-performance.jpg">palco iluminado</a>, PinkBeachPlanet, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Dance_Temple-Boom_2012.jpg">Dance Temple</a>, Serialslb, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Boom_Festival_2018.jpg">festival à beira do lago</a>, Racheland Deckard, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Boom_Festival_2018_Ruckenfigur_(44749947642).jpg">diante do palco</a>, Aurélien Adoue, CC BY 2.0; <a href="https://commons.wikimedia.org/w/index.php?curid=188629434">mixer</a> e <a href="https://commons.wikimedia.org/wiki/File:DSC_6225_Crowd_capturing_the_night_sky_with_smartphones_lights_and_bokeh_glowing_in_the_background.jpg">público à noite</a>, PattayaPatrol, CC BY-SA 4.0. Via Wikimedia Commons.</p>
+</div>
+
+<script>
+  // Cabeçalho: no celular os links viram menu (como o SiteHeader do Waveform).
+  const header = document.querySelector('.wf-header'), toggle = document.querySelector('.wf-nav-toggle')
+  toggle.addEventListener('click', () => { const open = header.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu') })
+  document.querySelectorAll('#wf-menu a').forEach((a) => a.addEventListener('click', () => header.classList.remove('is-open')))
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && header.classList.remove('is-open'))
+
+  // Vitrine: troca de foto a cada 5 s (como o ShowcaseCarousel do Waveform).
+  const slides = [...document.querySelectorAll('.wf-showcase__slide')], dots = [...document.querySelectorAll('.wf-showcase__dot')]
+  let active = 0
+  const show = (i) => { active = i; slides.forEach((s, j) => { s.classList.toggle('is-active', j === i); j === i ? s.removeAttribute('aria-hidden') : s.setAttribute('aria-hidden', 'true') }); dots.forEach((d, j) => j === i ? d.setAttribute('aria-current', 'true') : d.removeAttribute('aria-current')) }
+  dots.forEach((d, i) => d.addEventListener('click', () => show(i)))
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => { if (!document.hidden) show((active + 1) % slides.length) }, 5000)
+
+  // Divisor em onda: as mesmas barras que o DividerBlock do Waveform desenha (do primário ao destaque).
+  const lerp = (a, b, t) => { const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16); const ch = (s) => Math.round(((pa >> s) & 255) + (((pb >> s) & 255) - ((pa >> s) & 255)) * t); return '#' + [16, 8, 0].map((s) => ch(s).toString(16).padStart(2, '0')).join('') }
+  const N = 160, MAX = Math.max(24, Math.round(104 * 0.62)), wave = document.getElementById('wave')
+  for (let i = 0; i < N; i++) { const t = i / (N - 1), env = 0.16 + 0.84 * Math.exp(-(((t - 0.5) / 0.3) ** 2)), ripple = 0.5 + 0.5 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * 0.63 + 1)); const el = document.createElement('i'); el.style.height = Math.max(3, Math.round(MAX * env * ripple)) + 'px'; el.style.background = lerp('#f2c661', '#d9a033', t); wave.appendChild(el) }
+</script>
+</body>
+</html>
